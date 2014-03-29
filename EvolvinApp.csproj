@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License. 
+-->
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EvolvinApp</RootNamespace>
+    <AssemblyName>EvolvinApp</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>
+    </SilverlightVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>en-US</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>CordovaAppProj_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>EvolvinApp.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <BackgroundAgentType />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;WP8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;WP8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="cordovalib\Commands\BaseCommand.cs" />
+    <Compile Include="cordovalib\JSON\JsonHelper.cs" />
+    <Compile Include="cordovalib\BrowserMouseHelper.cs" />
+    <Compile Include="cordovalib\CommandFactory.cs" />
+    <Compile Include="cordovalib\ConfigHandler.cs" />
+    <Compile Include="cordovalib\ConsoleHelper.cs" />
+    <Compile Include="cordovalib\CordovaCommandCall.cs" />
+    <Compile Include="cordovalib\CordovaView.xaml.cs">
+      <DependentUpon>CordovaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="cordovalib\IBrowserDecorator.cs" />
+    <Compile Include="cordovalib\NativeExecution.cs" />
+    <Compile Include="cordovalib\OrientationHelper.cs" />
+    <Compile Include="cordovalib\PluginResult.cs" />
+    <Compile Include="cordovalib\ScriptCallback.cs" />
+    <Compile Include="cordovalib\XHRHelper.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\Accelerometer.cs" />
+    <Compile Include="Plugins\AudioFormatsHelper.cs" />
+    <Compile Include="Plugins\AudioPlayer.cs" />
+    <Compile Include="Plugins\Battery.cs" />
+    <Compile Include="Plugins\Camera.cs" />
+    <Compile Include="Plugins\Capture.cs" />
+    <Compile Include="Plugins\Compass.cs" />
+    <Compile Include="Plugins\Contacts.cs" />
+    <Compile Include="Plugins\Device.cs" />
+    <Compile Include="Plugins\File.cs" />
+    <Compile Include="Plugins\FileTransfer.cs" />
+    <Compile Include="Plugins\GeoLocation.cs" />
+    <Compile Include="Plugins\Globalization.cs" />
+    <Compile Include="Plugins\ImageExifHelper.cs" />
+    <Compile Include="Plugins\InAppBrowser.cs" />
+    <Compile Include="Plugins\Media.cs" />
+    <Compile Include="Plugins\MimeTypeMapper.cs" />
+    <Compile Include="Plugins\NetworkStatus.cs" />
+    <Compile Include="Plugins\Notification.cs" />
+    <Compile Include="Plugins\UI\AudioCaptureTask.cs" />
+    <Compile Include="Plugins\UI\AudioRecorder.xaml.cs">
+      <DependentUpon>AudioRecorder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\UI\ImageCapture.xaml.cs">
+      <DependentUpon>ImageCapture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\UI\NotificationBox.xaml.cs">
+      <DependentUpon>NotificationBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\UI\VideoCaptureTask.cs" />
+    <Compile Include="Plugins\UI\VideoRecorder.xaml.cs">
+      <DependentUpon>VideoRecorder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="cordovalib\CordovaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Plugins\UI\AudioRecorder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Plugins\UI\ImageCapture.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Plugins\UI\NotificationBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Plugins\UI\VideoRecorder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="www\assets\css\pageslider.css" />
+    <Content Include="www\assets\css\styles.css" />
+    <Content Include="www\assets\pics\Amy_Jones.jpg" />
+    <Content Include="www\assets\pics\Amy_Jones50.jpg" />
+    <Content Include="www\assets\pics\Eugene_Lee.jpg" />
+    <Content Include="www\assets\pics\Eugene_Lee50.jpg" />
+    <Content Include="www\assets\pics\Gary_Donovan.jpg" />
+    <Content Include="www\assets\pics\Gary_Donovan50.jpg" />
+    <Content Include="www\assets\pics\James_King.jpg" />
+    <Content Include="www\assets\pics\James_King50.jpg" />
+    <Content Include="www\assets\pics\John_Williams.jpg" />
+    <Content Include="www\assets\pics\John_Williams50.jpg" />
+    <Content Include="www\assets\pics\Julie_Taylor.jpg" />
+    <Content Include="www\assets\pics\Julie_Taylor50.jpg" />
+    <Content Include="www\assets\pics\Kathleen_Byrne.jpg" />
+    <Content Include="www\assets\pics\Kathleen_Byrne50.jpg" />
+    <Content Include="www\assets\pics\Lisa_Wong.jpg" />
+    <Content Include="www\assets\pics\Lisa_Wong50.jpg" />
+    <Content Include="www\assets\pics\Paula_Gates.jpg" />
+    <Content Include="www\assets\pics\Paula_Gates50.jpg" />
+    <Content Include="www\assets\pics\Paul_Jones.jpg" />
+    <Content Include="www\assets\pics\Paul_Jones50.jpg" />
+    <Content Include="www\assets\pics\Ray_Moore.jpg" />
+    <Content Include="www\assets\pics\Ray_Moore50.jpg" />
+    <Content Include="www\assets\pics\Steven_Wells.jpg" />
+    <Content Include="www\assets\pics\Steven_Wells50.jpg" />
+    <Content Include="www\assets\topcoat\css\topcoat-mobile-light.css" />
+    <Content Include="www\assets\topcoat\css\topcoat-mobile-light.min.css" />
+    <Content Include="www\assets\topcoat\font\LICENSE.txt" />
+    <Content Include="www\assets\topcoat\img\back_light.svg" />
+    <Content Include="www\assets\topcoat\img\call.svg" />
+    <Content Include="www\assets\topcoat\img\chat.svg" />
+    <Content Include="www\assets\topcoat\img\email.svg" />
+    <Content Include="www\assets\topcoat\img\next.svg" />
+    <Content Include="www\assets\topcoat\img\next_blue.svg" />
+    <Content Include="www\assets\topcoat\img\search-bg.png" />
+    <Content Include="www\assets\topcoat\img\search-bg2x.png" />
+    <Content Include="www\assets\topcoat\img\search.svg" />
+    <Content Include="www\assets\topcoat\img\search_bw.svg" />
+    <Content Include="www\assets\topcoat\img\search_dark.svg" />
+    <Content Include="www\assets\topcoat\img\search_light.svg" />
+    <Content Include="www\assets\topcoat\img\spinner.png" />
+    <Content Include="www\assets\topcoat\img\spinner2x.png" />
+    <Content Include="www\cordova.js" />
+    <Content Include="Images\appbar.back.rest.png" />
+    <Content Include="Images\appbar.close.rest.png" />
+    <Content Include="Images\appbar.feature.video.rest.png" />
+    <Content Include="Images\appbar.next.rest.png" />
+    <Content Include="Images\appbar.save.rest.png" />
+    <Content Include="Images\appbar.stop.rest.png" />
+    <Content Include="www\index.html" />
+    <Content Include="www\js\adapters\evolvin-adapter.js" />
+    <Content Include="www\js\adapters\jsonp-adapter.js" />
+    <Content Include="www\js\adapters\localstorage-adapter.js" />
+    <Content Include="www\js\adapters\memory-adapter.js" />
+    <Content Include="www\js\adapters\websql-adapter.js" />
+    <Content Include="www\js\app.js" />
+    <Content Include="www\js\EmployeeView.js" />
+    <Content Include="www\js\HomeView.js" />
+    <Content Include="www\lib\fastclick.js" />
+    <Content Include="www\lib\handlebars.js" />
+    <Content Include="www\lib\iscroll.js" />
+    <Content Include="www\lib\jquery.js" />
+    <Content Include="www\lib\pageslider.js" />
+    <None Include="cordova\lib\build.js" />
+    <None Include="cordova\lib\clean.js" />
+    <None Include="cordova\lib\deploy.js" />
+    <None Include="cordova\lib\log.js" />
+    <None Include="cordova\lib\target-list.js" />
+    <None Include="cordova\build.bat" />
+    <None Include="cordova\clean.bat" />
+    <None Include="cordova\lib\install-device.bat" />
+    <None Include="cordova\lib\install-emulator.bat" />
+    <None Include="cordova\lib\list-devices.bat" />
+    <None Include="cordova\lib\list-emulator-images.bat" />
+    <None Include="cordova\lib\list-started-emulators.bat" />
+    <None Include="cordova\lib\start-emulator.bat" />
+    <None Include="cordova\log.bat" />
+    <None Include="cordova\run.bat" />
+    <None Include="cordova\version.bat" />
+    <None Include="VERSION" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="www\assets\topcoat\font\SourceCodePro-Black.otf" />
+    <None Include="www\assets\topcoat\font\SourceCodePro-Bold.otf" />
+    <None Include="www\assets\topcoat\font\SourceCodePro-ExtraLight.otf" />
+    <None Include="www\assets\topcoat\font\SourceCodePro-Light.otf" />
+    <None Include="www\assets\topcoat\font\SourceCodePro-Regular.otf" />
+    <None Include="www\assets\topcoat\font\SourceCodePro-Semibold.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-Black.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-BlackIt.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-Bold.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-BoldIt.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-ExtraLight.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-ExtraLightIt.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-It.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-Light.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-LightIt.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-Regular.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-Semibold.otf" />
+    <None Include="www\assets\topcoat\font\SourceSansPro-SemiboldIt.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
